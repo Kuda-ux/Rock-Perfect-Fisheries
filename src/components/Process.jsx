@@ -16,7 +16,7 @@ const steps = [
 
 export default function Process() {
   return (
-    <section id="process" className="section relative overflow-hidden bg-brand-navy text-white">
+    <section id="process" className="section relative isolate overflow-hidden bg-brand-navy text-white">
       <div className="absolute inset-0 opacity-20">
         <img src={IMG.damlinerPond} alt="" className="w-full h-full object-cover" loading="lazy" />
         <div className="absolute inset-0 bg-gradient-to-b from-brand-navy via-brand-navy/80 to-brand-navy" />

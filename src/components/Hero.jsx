@@ -11,20 +11,24 @@ const badges = [
 
 export default function Hero() {
   return (
-    <section id="top" className="relative pt-28 md:pt-36 pb-20 md:pb-28 overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 -z-10">
-        <img
-          src={IMG.pondBluePipe}
-          alt="Professional dam-lined fish pond in Zimbabwe by Rock Perfect Fisheries ZW"
-          className="w-full h-full object-cover"
-          loading="eager"
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-navy/95 via-brand-navy/85 to-brand-aquaDark/80" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(27,167,224,0.25),transparent_50%)]" />
-      </div>
+    <section id="top" className="relative isolate pt-28 md:pt-36 pb-20 md:pb-28 overflow-hidden bg-brand-navy">
+      {/* Background image */}
+      <img
+        src={IMG.pondBluePipe}
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full object-cover"
+        loading="eager"
+      />
+      {/* Gradient overlays for premium depth */}
+      <div className="absolute inset-0 bg-gradient-to-br from-brand-navyDark/95 via-brand-navy/90 to-brand-aquaDark/80" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(27,167,224,0.35),transparent_55%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(47,168,79,0.18),transparent_60%)]" />
+      {/* Decorative blurred orbs */}
+      <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-brand-aqua/25 blur-3xl" />
+      <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-brand-red/15 blur-3xl" />
 
-      <div className="container-px mx-auto max-w-7xl relative">
+      <div className="container-px mx-auto max-w-7xl relative z-10">
         <div className="grid lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-7 text-white animate-fade-up">
             <span className="eyebrow !bg-white/10 !text-brand-aqua border border-white/10">
@@ -32,8 +36,8 @@ export default function Hero() {
               Empowering Farmers · Transforming Aquaculture · Feeding the Nation
             </span>
 
-            <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-[1.05]">
-              Build a <span className="text-brand-aqua">Profitable Fish Farming</span> Project with Rock Perfect Fisheries ZW
+            <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl xl:text-[4.5rem] font-extrabold leading-[1.05] tracking-tight">
+              Build a <span className="relative inline-block"><span className="relative z-10 bg-gradient-to-r from-brand-aqua via-cyan-300 to-brand-aqua bg-clip-text text-transparent">Profitable Fish Farm</span><span className="absolute inset-x-0 bottom-1 h-3 bg-brand-aqua/20 -z-0 rounded"></span></span> in Zimbabwe
             </h1>
 
             <p className="mt-6 text-lg md:text-xl text-white/85 max-w-2xl leading-relaxed">
