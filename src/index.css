@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    @apply font-sans text-brand-navy bg-white antialiased;
+  }
+  h1, h2, h3, h4, h5 { @apply font-display tracking-tight; }
+}
+
+@layer components {
+  .container-px { @apply px-5 sm:px-8 lg:px-12; }
+  .section { @apply py-20 md:py-28; }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 font-semibold text-sm md:text-base transition-all duration-300 shadow-sm hover:shadow-lg hover:-translate-y-0.5;
+  }
+  .btn-primary { @apply btn bg-brand-red text-white hover:bg-brand-redDark; }
+  .btn-whatsapp { @apply btn bg-brand-green text-white hover:bg-brand-greenDark; }
+  .btn-navy { @apply btn bg-brand-navy text-white hover:bg-brand-navyDark; }
+  .btn-outline { @apply btn border-2 border-brand-navy/15 text-brand-navy bg-white hover:border-brand-navy; }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full bg-brand-aqua/10 text-brand-aquaDark px-4 py-1.5 text-xs font-semibold uppercase tracking-wider;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-card border border-brand-navy/5 p-6 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-premium;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-brand-red via-brand-aqua to-brand-navy bg-clip-text text-transparent;
+  }
+}
+
+/* subtle water pattern */
+.bg-water {
+  background-image:
+    radial-gradient(ellipse at top, rgba(27,167,224,0.08), transparent 60%),
+    radial-gradient(ellipse at bottom, rgba(47,168,79,0.06), transparent 60%);
+}
