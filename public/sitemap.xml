@@ -64,5 +64,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
+  <url>
+    <loc>https://www.rockperfectfisheries.co.zw/#locations</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.rockperfectfisheries.co.zw/#faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
 
 </urlset>

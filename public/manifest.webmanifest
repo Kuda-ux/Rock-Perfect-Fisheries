@@ -1,0 +1,17 @@
+{
+  "name": "Rock Perfect Fisheries ZW",
+  "short_name": "Rock Perfect",
+  "description": "Fish farming, pond construction, dam liners, fingerlings, fish feed and free on-site training in Zimbabwe.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0A2540",
+  "theme_color": "#0A2540",
+  "lang": "en-ZW",
+  "orientation": "portrait",
+  "categories": ["business", "agriculture", "food", "education"],
+  "icons": [
+    { "src": "/logo.jpeg", "sizes": "192x192", "type": "image/jpeg", "purpose": "any" },
+    { "src": "/logo.jpeg", "sizes": "512x512", "type": "image/jpeg", "purpose": "any maskable" }
+  ]
+}

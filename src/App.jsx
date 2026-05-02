@@ -10,6 +10,8 @@ import WhyChooseUs from './components/WhyChooseUs'
 import Gallery from './components/Gallery'
 import VisionMission from './components/VisionMission'
 import Training from './components/Training'
+import LocationsZW from './components/LocationsZW'
+import FAQ from './components/FAQ'
 import CTA from './components/CTA'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -32,6 +34,8 @@ export default function App() {
         <Gallery />
         <VisionMission />
         <Training />
+        <LocationsZW />
+        <FAQ />
         <CTA />
         <Contact />
       </main>
